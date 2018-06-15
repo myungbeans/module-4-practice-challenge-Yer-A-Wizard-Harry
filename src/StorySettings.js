@@ -21,11 +21,11 @@ const StorySettings = props => {
         <div>
           <h3>Filter By House</h3>
         </div>
-        <input name="selectedHouse" type="radio" value="All" />All
-        <input name="selectedHouse" type="radio" value="Gryffindor" />Gryffindor
-        <input name="selectedHouse" type="radio" value="Slytherin" />Slytherin
-        <input name="selectedHouse" type="radio" value="Hufflepuff" />Hufflepuff
-        <input name="selectedHouse" type="radio" value="Ravenclaw" />Ravenclaw
+        <input onChange={props.handleHouseSelect}name="selectedHouse" type="radio" value="All" />All
+        <input onChange={props.handleHouseSelect} name="selectedHouse" type="radio" value="Gryffindor" />Gryffindor
+        <input onChange={props.handleHouseSelect} name="selectedHouse" type="radio" value="Slytherin" />Slytherin
+        <input onChange={props.handleHouseSelect} name="selectedHouse" type="radio" value="Hufflepuff" />Hufflepuff
+        <input onChange={props.handleHouseSelect} name="selectedHouse" type="radio" value="Ravenclaw" />Ravenclaw
       </form>
     </div>
   );
